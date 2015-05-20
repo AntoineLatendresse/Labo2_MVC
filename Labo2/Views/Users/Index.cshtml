@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    function ButtonAnimation(i)
+    {
+        document.getElementById(i).style.backgroundColor = "darkgray";
+    }
+    function ButtonAnimation_down(i) {
+        document.getElementById(i).style.backgroundColor = "gray";
+    }
+    function ButtonAnimation_click(i) {
+        document.getElementById(i).style.backgroundColor = "white";
+    }
+    function ButtonAnimation_up(i) {
+        document.getElementById(i).style.backgroundColor = "gray";
+    }
+</script>
+<style>
+    a{
+        color:white;
+    }
+    a:hover{
+        color:lightgray;
+        text-decoration:none;
+    }
+</style>
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <td id="Button_1"
+            style="border: 1px solid black; padding: 5px; background-color: white"
+            onmouseout="ButtonAnimation_down('Button_1')">
+            @Html.ActionLink("Inscription", "Inscription", "Users")
+        </td>
+    </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+        <td id="Button_2"
+            style="border: 1px solid black; padding: 5px; background-color: white; "
+            onmouseout="ButtonAnimation_down('Button_2')">
+            @Html.ActionLink("Lister", "Lister", "Users")
+        </td>
+    </tr>
+</table>
+
