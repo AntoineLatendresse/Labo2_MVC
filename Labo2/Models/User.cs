@@ -27,7 +27,7 @@ namespace Labo2.Models
       public User(Object connexionString)
          : base(connexionString)
       {
-         SQLTableName = "USERS";
+         SQLTableName = "Users";
       }
 
       public User()

@@ -211,7 +211,6 @@
     <Content Include="Views\Users\Inscription.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Users\Lister.cshtml" />
-    <Content Include="Views\Users\InscriptionTest.cshtml" />
     <Content Include="Views\Users\Modify.cshtml" />
   </ItemGroup>
   <ItemGroup />

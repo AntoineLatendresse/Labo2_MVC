@@ -4,18 +4,8 @@
 }
 
 <script type="text/javascript">
-    function ButtonAnimation(i)
-    {
-        document.getElementById(i).style.backgroundColor = "darkgray";
-    }
     function ButtonAnimation_down(i) {
-        document.getElementById(i).style.backgroundColor = "gray";
-    }
-    function ButtonAnimation_click(i) {
-        document.getElementById(i).style.backgroundColor = "white";
-    }
-    function ButtonAnimation_up(i) {
-        document.getElementById(i).style.backgroundColor = "gray";
+        document.getElementById(i).style.backgroundColor = "black";
     }
 </script>
 <style>
@@ -32,7 +22,7 @@
 <table>
     <tr>
         <td id="Button_1"
-            style="border: 1px solid black; padding: 5px; background-color: white"
+            style="border: 1px solid black; padding: 5px; background-color: black"
             onmouseout="ButtonAnimation_down('Button_1')">
             @Html.ActionLink("Inscription", "Inscription", "Users")
         </td>
@@ -40,7 +30,7 @@
     <tr><td>&nbsp;</td></tr>
     <tr>
         <td id="Button_2"
-            style="border: 1px solid black; padding: 5px; background-color: white; "
+            style="border: 1px solid black; padding: 5px; background-color: black; "
             onmouseout="ButtonAnimation_down('Button_2')">
             @Html.ActionLink("Lister", "Lister", "Users")
         </td>
