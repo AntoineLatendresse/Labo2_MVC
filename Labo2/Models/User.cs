@@ -39,7 +39,7 @@ namespace Labo2.Models
          Id = int.Parse(this["ID"]);
          Prenom = this["Prenom"];
          Nom = this["Nom"];
-         Telephone = this["Telelphone"];
+         Telephone = this["Telephone"];
          CodePostal = this["CodePostal"];
          Naissance = DateTime.Parse(this["Naissance"]);
          Sexe = int.Parse(this["Sexe"]);
